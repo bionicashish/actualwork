@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+
+* {
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+}
+
+
+body {
+    background-color: #F7F7DF;
+    cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.9998 2.6665C23.3638 2.6665 29.3332 8.63584 29.3332 15.9998C29.3332 23.3638 23.3638 29.3332 15.9998 29.3332C8.63584 29.3332 2.6665 23.3638 2.6665 15.9998C2.6665 8.63584 8.63584 2.6665 15.9998 2.6665ZM15.9998 5.33317C13.1709 5.33317 10.4578 6.45698 8.45736 8.45736C6.45698 10.4578 5.33317 13.1709 5.33317 15.9998C5.33317 18.8288 6.45698 21.5419 8.45736 23.5423C10.4578 25.5427 13.1709 26.6665 15.9998 26.6665C18.8288 26.6665 21.5419 25.5427 23.5423 23.5423C25.5427 21.5419 26.6665 18.8288 26.6665 15.9998C26.6665 13.1709 25.5427 10.4578 23.5423 8.45736C21.5419 6.45698 18.8288 5.33317 15.9998 5.33317V5.33317ZM15.9998 9.33317C17.4033 9.3337 18.7708 9.77713 19.9075 10.6003C21.0442 11.4234 21.8921 12.5843 22.3304 13.9176C22.7688 15.2508 22.7752 16.6884 22.3488 18.0255C21.9224 19.3626 21.0848 20.531 19.9555 21.3642C18.8262 22.1975 17.4628 22.6531 16.0594 22.6662C14.656 22.6793 13.2843 22.2491 12.1396 21.437C10.995 20.6249 10.1359 19.4723 9.68464 18.1434C9.23339 16.8144 9.21305 15.377 9.6265 14.0358C9.9384 14.7328 10.4802 15.3015 11.1612 15.6467C11.8423 15.992 12.6212 16.0928 13.3678 15.9324C14.1143 15.7721 14.7831 15.3601 15.2622 14.7656C15.7413 14.1711 16.0017 13.4301 15.9998 12.6665C16 12.0245 15.8148 11.396 15.4664 10.8567C15.1179 10.3174 14.6212 9.89025 14.0358 9.6265C14.6572 9.43584 15.3158 9.33317 15.9998 9.33317V9.33317Z' fill='%230000FF'/%3E%3C/svg%3E%0A") 32 32, pointer;
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+    background-color: transparent
+}
+
+
+header .twtr{
+    display: none;
+}
+
+
+
+header a{
+    color: #00f;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 0%;
+    text-decoration: none;
+}
+
+header a:hover {
+    opacity: 50%;
+    transition: all 0.3s ease 0s;
+    cursor: url(eye-yellow.svg), pointer;
+}
+
+main h1{
+    color: #00f;
+    font-size: 92px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 120%;
+    width: 1197px;
+}
+
+.span-text {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #00f;
+    text-decoration-thickness: 11px;
+}
+
+main button{
+    background-color: #00f;
+    color: #ff0;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+}
+
+
+main button:hover{
+    cursor: url(eye-yellow.svg), pointer;
+    background-color: #00f;
+    transition: all 0.3s ease 0s;
+    padding: 12px 32px;
+}
+
+main {
+    align-items: center;
+    margin: auto;
+}
+
+
+
+
+.main-content {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+    align-items: center;
+    width: 100%;
+    cursor: url(eye-2-line.svg);
+}
+
+
+
+@media (max-width:768px) {
+    header {
+        padding: 20px 16px;
+    }
+
+    header p{
+        display: none;
+    }
+
+
+    header .twtr{
+        display: block;
+    }
+
+    .main-content {
+        width: 100vw;
+        margin: 0px 16px;
+    }
+
+
+    .span-text {
+        text-underline-offset: 5px;
+        text-decoration-thickness: 6px;
+    }
+
+    main h1 {
+        width: fit-content;
+        font-size: 56px;
+    }
+}
+
+
+@media (min-width:769px) and (max-width:1280px) {
+    header {
+        padding: 20px 40px;
+    }
+
+
+    header .twtr{
+        display: none;
+    }
+
+
+    .main-content {
+        width: 100vw;
+        margin: 0px 40px;
+    }
+
+
+    .span-text {
+        text-underline-offset: 6px;
+        text-decoration-thickness: 9px;
+    }
+
+    main h1 {
+        width: fit-content;
+        font-size: 72px;
+        max-width: 864px;
+    }
+}
