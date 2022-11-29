@@ -115,7 +115,7 @@ main {
 
     .main-content {
         width: 100vw;
-        margin: 0px 16px;
+        margin: 0px;
     }
 
 
@@ -127,6 +127,7 @@ main {
     main h1 {
         width: fit-content;
         font-size: 56px;
+        margin: 0px, 16px;
     }
 }
 
